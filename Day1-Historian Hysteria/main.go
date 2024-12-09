@@ -192,7 +192,7 @@ func main() {
 		36795, 34357, 84926, 47530, 97110, 34357, 32345, 26935, 30847, 27795, 40093,
 		56912, 70436, 77328, 50482, 65563, 61328, 72207, 90011, 23322, 46878}
 
-	sort.Ints(left)
+	sort.Ints(left) //sort the array => modifies the original array
 	sort.Ints(right)
 
 	sum := int64(0)
