@@ -198,3 +198,8 @@ function calculateSum(leftSorted, rightSorted) {
 }
 
 console.log(calculateSum(sortedLeft, sortedRight));
+
+module.exports = {
+  left,
+  right,
+};

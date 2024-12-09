@@ -192,6 +192,21 @@ func main() {
 		36795, 34357, 84926, 47530, 97110, 34357, 32345, 26935, 30847, 27795, 40093,
 		56912, 70436, 77328, 50482, 65563, 61328, 72207, 90011, 23322, 46878}
 
+	//questio 2
+	// secondSum := calculateSecondQuestionSum(left, right)
+	// fmt.Println("second question sum", secondSum)
+
+	secondSum := int64(0)
+	for _, value := range left {
+		count := 0
+		for _, v := range right {
+			if v == value {
+				count++
+			}
+		}
+		secondSum += int64(math.Abs(float64(value * count)))
+	}
+	fmt.Println("secondSum", secondSum)
 	sort.Ints(left) //sort the array => modifies the original array
 	sort.Ints(right)
 
